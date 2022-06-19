@@ -10,14 +10,14 @@ namespace DegreeOfTwo
             int minRandomValue = 2;
             int maxRandomValue = 101;
             int degreeOfTwo = 1;
-            int two = 2;
+            int twoNumber = 2;
             int twoToDegree = 2;
 
             int randomNumber = random.Next(minRandomValue, maxRandomValue);
 
             while (twoToDegree < randomNumber)
             {
-                twoToDegree *= two;
+                twoToDegree *= twoNumber;
                 degreeOfTwo ++;
             }
 
