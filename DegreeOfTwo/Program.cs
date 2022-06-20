@@ -9,19 +9,20 @@ namespace DegreeOfTwo
             Random random = new Random();
             int minRandomValue = 2;
             int maxRandomValue = 101;
-            int degreeOfTwo = 1;
-            int twoNumber = 2;
-            int twoToDegree = 2;
+            int degree = 1;
+            int number = 2;
+            int numberInDegree;
 
+            numberInDegree = number;
             int randomNumber = random.Next(minRandomValue, maxRandomValue);
 
-            while (twoToDegree < randomNumber)
+            while (numberInDegree < randomNumber)
             {
-                twoToDegree *= twoNumber;
-                degreeOfTwo ++;
+                numberInDegree *= number;
+                degree++;
             }
 
-            Console.WriteLine($"Случайное число : {randomNumber} , минимальную степень двойки, превосходящую заданное число : {degreeOfTwo} , итоговое минимальное число : {twoToDegree}");
+            Console.WriteLine($"Случайное число : {randomNumber} , минимальную степень двойки, превосходящую заданное число : {degree} , итоговое минимальное число : {numberInDegree}");
         }
     }
 }
